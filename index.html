@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+        <meta name="description" content="An online version of weight vectors generator for MOEA/D and NSGA-III metaheuristics">
+	  	<meta name="author" content="Thiago Nascimento">
+		<meta name="keywords" content="weight vectors generator, nsga-III, moea/d">
+        <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="Weight Vectors">
+		<meta name="robots" content="index, follow">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#f8f8f8">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#f8f8f8">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Weight Vectors Generator</title>
+    </head>
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="custom-bootstrap-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Weight Vectors Generator</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+        			<ul class="nav navbar-nav">
+        				<li><a href="https://github.com/thiagodnf/weight-vectors-generator" target="_blank">Source Code</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="input-h">H</label>
+                            <input type="number" class="form-control" id="input-h" value="3"/>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="input-m">M</label>
+                            <input type="number" class="form-control" id="input-m" value="3"/>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="input-t">T</label>
+                            <input type="number" class="form-control" id="input-t" value="1.0"/>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-generate" type="button" class="btn btn-blue">Generate</button>
+            </form>
+            <br>
+            <textarea id="input-output" class="form-control" rows="10"></textarea>
+        </div>
+
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/WeightVectorsGenerator.js"></script>
+        <script src="js/script.js"></script>
+
+        <script>
+            // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            //
+            // ga('create', 'UA-46693870-21', 'auto');
+            // ga('send', 'pageview');
+        </script>
+    </body>
+</html>

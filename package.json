@@ -1,0 +1,23 @@
+{
+	"name": "weight-vectors-generator",
+	"version": "1.0.0",
+	"description": "An online version of weight vectors generator for MOEA/D and NSGA-III metaheuristics",
+	"main": "app.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"files": [
+		"app.js"
+	],
+	"author": "Thiago Nascimento",
+	"license": "MIT",
+	"homepage": "https://github.com/thiagodnf/weight-vectors-generator",
+	"dependencies": {
+		"serve-static": "",
+		"connect": "",
+		"network":""
+  	}
+}

@@ -1,7 +1,7 @@
 ![alt tag](https://raw.githubusercontent.com/thiagodnf/color-palettes/master/images/favicon/android-icon-72x72.png)
-# Color Palettes
-Color palettes available at http://www.highcharts.com/
+# Weight Vectors Generator
+An online version of weight vectors generator for MOEA/D and NSGA-III metaheuristics
 
 #Access
 
-https://thiagodnf.github.io/color-palettes/
+https://thiagodnf.github.io/weight-vectors-generator/
